@@ -1,4 +1,4 @@
-package UC1;
+package UC2;
 
 public class MyStackMain {
     public static void main(String[] args) {
@@ -10,7 +10,13 @@ public class MyStackMain {
         myStack.push(myFirstNode);
         myStack.push(mySecondNode);
         myStack.push(myThirdNode);
-
         myStack.printMyNode();
+
+        myStack.pop();
+        myStack.peek();
+        myStack.pop();
+        myStack.peek();
+        myStack.pop();
+        myStack.peek();
     }
 }

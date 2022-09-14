@@ -1,4 +1,4 @@
-package UC1;
+package UC2;
 
 public class MyStack<K> {
 
@@ -23,7 +23,17 @@ public class MyStack<K> {
         }
     }
 
+    public void peek() {
+        System.out.println(head);
+    }
+
+    public INode<K> pop() {
+        INode<K> tempNode = this.head;
+        this.head = head.getNext();
+        return tempNode;
+    }
+
     public void printMyNode() {
-        System.out.println("My Nodes : "+head);
+        System.out.println("My Nodes : " + head);
     }
 }
