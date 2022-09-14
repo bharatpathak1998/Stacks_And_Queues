@@ -1,16 +1,16 @@
-package UC2;
+package UC3;
 
-public class MyStack<K> {
+public class MyQueue<K> {
 
     public INode<K> head;
     public INode<K> tail;
 
-    public MyStack() {
+    public MyQueue() {
         this.head = null;
         this.tail = null;
     }
 
-    public void push(INode<K> newNode) {
+    public void enQueue(INode<K> newNode) {
         if (this.tail == null) {
             this.tail = newNode;
         }
@@ -23,17 +23,7 @@ public class MyStack<K> {
         }
     }
 
-    public void peek() {
-        System.out.println(head);
-    }
-
-    public INode<K> pop() {
-        INode<K> tempNode = this.head;
-        this.head = head.getNext();
-        return tempNode;
-    }
-
     public void printMyNode() {
-        System.out.println("My Nodes : " + head);
+        System.out.println("My Nodes : "+head);
     }
 }
