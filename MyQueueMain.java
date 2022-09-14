@@ -1,4 +1,4 @@
-package UC3;
+package UC4;
 
 public class MyQueueMain {
     public static void main(String[] args) {
@@ -10,7 +10,9 @@ public class MyQueueMain {
         myQueue.enQueue(myFirstNode);
         myQueue.enQueue(mySecondNode);
         myQueue.enQueue(myThirdNode);
-
         myQueue.printMyNode();
+
+        myQueue.dequeue();
+        myQueue.dequeue();
     }
 }
