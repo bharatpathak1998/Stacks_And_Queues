@@ -23,7 +23,7 @@ public class MyQueue<K> {
         }
     }
 
-    public void dequeue() {
+    public void deQueue() {
         INode<K> prevNode = null, currentNode = head;
         while (currentNode.getNext() != null) {
             prevNode = currentNode;
